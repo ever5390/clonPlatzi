@@ -1,0 +1,796 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    background-color: #203744;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+/* Navegacion */
+nav{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: .8rem;
+    height: 50px;
+}
+
+nav img{
+    width: 2rem;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+}
+
+.nav-menu ul{
+    border-right: 1px solid #fff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+.nav-menu ul li{
+    display: inline;
+    padding: 0 .5em
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+    .puntos{
+        width: 60px;
+        font-weight: 500;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .puntos::after{
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 2px 2px 0 0 ;
+        top: 4px;
+        right: 20px;
+        width: 6px;
+        height: 6px;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+    }
+
+    .lupa2{
+        display: none;
+    }
+
+    .menu-burger{
+        display: none;
+    }
+
+    .busqueda, .notificacion{
+        padding:0 10px;
+    }
+
+    .cuadro-busqueda{
+       
+        background: #fff;
+        border-radius: 5px;
+        /* padding: 0 0 0 15px; */
+        box-sizing: border-box;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cuadro-busqueda input{
+        border: none;
+        width: 18rem;
+        margin-left: 15px;
+    }
+
+    .cuadro-busqueda .lupa{
+        height: 35px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 0 4px 4px 0;
+        background: #91C93C;
+    }
+
+/* header content */
+
+.contenido-header{
+    max-width: 930px;
+    margin: 30px auto;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.contenido-header h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-titulo{
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.header-item{
+    max-width: 400px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    display: flex;
+    letter-spacing: .7px;
+    margin-bottom: 1em;
+}
+
+.header-item .porcentaje{
+    font-size: 2.7em;
+    display: inline-block;
+    font-weight: bold;
+    color: #32ACF8;
+}
+
+.porcentaje span{
+   padding: 0 10px;
+   font-size: 1em;
+}
+
+.header-item .texto{
+    padding: 5px 0;
+}
+
+/*Header botones*/
+
+.header-buttons{
+    max-width: 440px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+}
+
+.header-buttons .button{
+    /* width: 100%; */
+    margin-bottom: 15px;
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.header-buttons a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header-buttons .comenzar{
+    background: #95CA3E;
+}
+
+.header-buttons .clase{
+    border: 1px solid #fff;
+}
+
+/* Sections */
+
+section .frase{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.frase p{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.frase1{
+    color: rgb(102, 101, 101);
+    margin-bottom: 0;
+}
+
+.frase2{
+    margin-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #3CB4FF;
+    font-weight: bold;
+}
+
+/*section 1*/
+
+.article{
+    max-width: 1000px;
+    margin: 0 auto;  
+    text-align: center;
+}
+
+.article h2{
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.cuadro-busqueda2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.cuadro-busqueda2 span{
+    padding: 15px;
+}
+.cuadro-busqueda2 input{
+    border: none;
+    width: 100%;
+    height: 20px;
+}
+
+.especializaciones{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.especializaciones .carrera{
+   width: 320px;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   display: flex;
+   color: rgb(80, 79, 79);
+   align-items: center;
+   background-color: rgb(212, 66, 8);
+   font-size: .9rem;
+   border: none;
+
+}
+
+.carrera .icon-carrera{
+    font-size: 2.4rem;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+    padding: 0 18px;
+}
+
+.carrera .descripcion{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding:  10px 10px 10px 13px;
+    box-sizing: border-box;
+    border-radius: 0 7px 7px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carrera .descripcion h3, .carrera .descripcion p{
+    margin: 0;
+}
+
+/*section 2 Lanzamientos*/
+
+.section3{
+    background: #F2F2F2;
+}
+
+.article .contenedor-bloques{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .bloque1{
+    width: 480px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #91C93C;
+    font-size: .8rem;
+}
+
+.bloque1>img{
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.bloque1 .lanzamiento{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bloque1 .lanzamiento img{
+    width: 35px;
+}
+    .bloque1 h2{
+        color: rgb(78, 80, 80);
+        width: 100%;
+        padding-left: 10px;
+        position: relative;
+        margin: 0;
+    }
+
+    .lanzamiento h2::after{
+        content: '';
+        position: absolute;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-bottom: 5px solid #000;
+        top: 13px;
+        right: 0px;
+        width: 0;
+        height: 0;
+        transform: rotate(90deg);
+    }
+
+/* próximos lanzamientos */
+
+.section4{
+    background: #F2F2F2;
+}
+
+.section4 .subtitulo{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.article-section4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prox-lanzamiento{
+    background: forestgreen;
+    border-left: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-shadow: 0 0px 2px 0px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.icon-title{
+    text-align: left;
+    display: flex;
+    padding: 10px 5px 5px 5px;
+}
+
+.icon-title img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-title h2{
+    font-size: 1.2rem;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.time{
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.time i{
+    margin-right: 10px;
+}
+
+.revestimiento{
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+/*Section funciona*/
+
+.funciona-section{
+    background: #203744;
+}
+
+.funciona-section h2{
+    color: #91C93C;
+    margin-top: 0;
+}
+
+.article-funciona{
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.box-funciona{
+    width: 100%;
+    display: flex;
+    color: white;
+    margin-bottom: 7px;
+    align-items: center;
+}
+
+.funciona{
+    width: 50%;
+    text-align: left;
+}
+
+.texto h3{
+    margin: 0;
+}
+
+.texto p{
+    margin: 0;
+    margin-top:5px; 
+}
+
+.funciona img{
+    width: 250px;
+}
+
+.funciona.img{
+    text-align: right;
+}
+
+/* section Frase penultimo */
+
+.section5{
+    font-size: 1rem;
+}
+.article-funciona.penultima{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+section h1{
+    font-size: 2em;
+    margin-top: 0;
+}
+
+
+.article-funciona .btn-uno{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    font-size: 1em;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(79, 192, 56);
+}
+
+.article-funciona .segundo-link{
+    color: #3CB4FF;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    background: #fff;
+}
+
+section{
+    width: 100%;
+    text-align: center;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    padding: 25px 15px;
+    background: #203744;
+
+}
+
+.section-footer{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.section-footer ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.section-footer ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.section-footer  a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+    .footer-content{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1em;       
+    }
+
+
+    .footer-content .footer-buscador{
+        width: 50%;
+        text-align: left;
+    }
+
+        .footer-buscador .box-input-footer{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background: #fff;
+            display: flex;
+        }
+            .box-input-footer input{
+                width: 100%;
+                border: none;
+                margin-left: 15px;
+            }
+
+            .box-input-footer a{
+                background: #91C93C;
+                padding: 9px 10px;
+                border-radius: 0 5px 5px 0;
+            }
+
+    .footer-content .footer-idiom{
+        width: 25%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .footer-content .content-idioms{
+            text-align: left;
+            width: 60%;
+            height: 40px;
+            padding-left: 15px;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .content-idioms:after{
+            content:'';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-width: 2px 2px 0 0 ;
+            top: 12px;
+            right: 15px;
+            border-style: solid;
+            border-color: #fff;
+            transform: rotate(135deg);
+        }
+
+    .footer-content .social{
+
+        width: 25%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .social .icons-social{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 5px;
+            font-size: 1em;
+        }
+
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1023px){
+
+    /*nav */
+    .cuadro-busqueda{
+        display: none;
+    }
+
+    .busqueda .lupa2{
+        display: block;
+    }
+
+    .cuadro-busqueda .lupa{
+        height: 35px;
+        background-color: inherit;
+    }
+
+    /* content header*/
+    .contenido-header{
+        max-width: 600px;
+        margin: 30px auto;
+        font-size: .7rem;
+    }
+
+    .header-item .texto{
+        font-size: 1em;
+    }
+
+    /*carreras*/
+
+    .especializaciones .carrera{
+        width: 49%;
+    }
+
+    /*lanzamientos*/
+
+    .contenedor-bloques{
+        display: flex;
+        color: #32ACF8;
+        flex-direction: column;
+        font-size: .9rem;
+    }
+
+    .contenedor-bloques .bloque1{
+        margin: 0 auto;
+    }
+
+    .contenedor-bloques .bloque2{
+        display: none;
+    }
+
+    .bloque1 .lanzamiento img{
+        width: 30px;
+    }
+
+    .bloque1 h2{
+        font-size: .9rem;
+    }
+
+    /*proximos lanzamientos*/
+
+    .article-section4{
+        flex-direction: column;
+    }
+
+    .section4 .prox-lanzamiento{
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: .8rem;
+    }
+ 
+    /** funciona */
+    .funciona img{
+        width: 200px;
+    }
+
+    /*section 5*/
+    .section5 {
+        font-size: .8rem;
+    }
+
+    /*footer*/
+
+    .section-footer ul{
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .section-footer {
+        font-size: .8rem;
+        flex-direction: column;
+    }
+
+    .footer-content .footer-idiom{
+        width: 50%;
+    }
+
+    .footer-content .footer-idiom .content-idioms{
+        width: 95%;
+    }
+
+    .footer-content .social{
+        width: 50%;
+    }
+
+    .box-foot{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .nav-menu ul{
+        display: none;
+    }
+
+    .busqueda .lupa2{
+        display: none;
+    }
+
+    .busqueda .menu-burger{
+        display: block;
+    }
+
+    /*content header*/
+
+    .contenido-header h1{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    .header-item{
+        flex-direction: column;
+    }
+
+        /*carreras*/
+
+    .especializaciones .carrera{
+        width: 100%;
+    }
+
+    /*lanzamientos*/
+    .contenedor-bloques .bloque1{
+       font-size: .6rem;
+       width: 100%;
+    }
+
+    /** funciona */
+    .funciona img{
+        width: 150px;
+    }
+
+    .funciona{
+        font-size: .9rem;
+    }
+
+    .article-funciona.penultima{
+       flex-direction: column;
+    }
+
+    .article-funciona .btn-uno, .article-funciona .segundo-link{
+        width: 100%;
+    }
+
+    /*footer*/
+
+    .footer-content .footer-idiom{
+        width: 100%;
+    }
+
+        .footer-content .footer-idiom .content-idioms{
+            width: 100%;
+        }
+
+    .footer-content .social{
+        width: 100%;
+    }
+
+    .footer-content .footer-buscador{
+        width: 100%;
+        text-align: center;
+    }
+}
