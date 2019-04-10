@@ -470,9 +470,9 @@ section h1{
 .article-funciona .btn-uno{
     text-decoration: none;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     display: block;
-    font-size: 1em;
+    font-size: .9em;
     width: 50%;
     box-sizing: border-box;
     border-radius: 5px;
@@ -512,6 +512,7 @@ footer{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 15px;
 }
 
@@ -683,6 +684,10 @@ footer{
     /** funciona */
     .funciona img{
         width: 200px;
+    }
+
+    .article-funciona {
+        max-width: 500px;
     }
 
     /*section 5*/
